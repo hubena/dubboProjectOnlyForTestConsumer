@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: dubboProjectOnlyForTestConsumer
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Zengxb
+Implementation-Vendor-Id: com.hubena
+Build-Jdk: 1.8.0_121
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/dubboProjectOnlyForTestConsumer
+Created-By: Maven Integration for Eclipse
+

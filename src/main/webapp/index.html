@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="/static/js/jquery-3.3.1.min.js"></script>
+<title>测试</title>
+</head>
+<body>
+
+<button id="testButton" onclick="testButton()" style="display:block;width: 100%;" >登录</button>
+<input id="testResponse" type="text">
+
+</body>
+</html>
+<script type="text/javascript">
+function testButton() {
+	$.ajax({
+		type:"post",
+		url: "/get/helloWorld",
+		dataType: "json",
+		data: {
+			"id" : 3
+		},
+		success: function(data){
+			$('#testResponse').val(data.name); 
+		},
+		error: function(err) {
+			$("#testResponse").val(err);
+		}
+	});
+}
+</script>
